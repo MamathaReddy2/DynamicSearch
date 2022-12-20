@@ -2,7 +2,7 @@ package com.app.ashokit.service;
 
 import java.util.List;
 
-import com.app.ashokit.binding.Plan;
+import com.app.ashokit.binding.EnterPlanDetails;
 
 public interface PlanService {
 	

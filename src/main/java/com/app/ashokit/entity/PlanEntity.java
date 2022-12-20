@@ -1,5 +1,6 @@
 package com.app.ashokit.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,10 +14,18 @@ import lombok.Data;
 public class PlanEntity {
 	@Id
 	@GeneratedValue
-	private Integer planId;
-	
-	private String planName;
-	private String planStatus;
+	@Column(name="ID")
+	private Integer id;
+	@Column(name="NAME")
+	private String name;
+	@Column(name="EMAIL")
+	private String email;
+	@Column(name="MOBILE NUMBER")
+	private Long mobileNumber;
+	@Column(name="GENDER")
+	private String gender;
+	@Column(name="SSN")
+	private Long ssn;
 	
 	
 
